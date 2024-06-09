@@ -1,15 +1,11 @@
-// SMOOTH SCROLLING SECTIONS
-$('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-        || location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-           if (target.length) {
-             $('html,body').animate({
-                 scrollTop: target.offset().top
-            }, 1000);
-            return false;
-        }
-    }
+// jquery scrolling
+// select all anchor elements with href starting with a # (but not href = #)
+$('a[href*=#]:not([href=#])').click(function () {
+    // scroll to element instantly on click
+    $('html,body').animate(
+        {
+            scrollTop: $(this.hash).offset().top,
+        },
+        0
+    );
 });

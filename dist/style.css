@@ -9,34 +9,62 @@
 section {
   height: 100vh;
   font-size: 40px;
-  font-weight: 100;
-  background-color: #22A7F0;
+  font-weight: 300;
   display: flex;
+  padding-left: 45rem;
+  padding-right: 44rem;
   justify-content: center;
   align-items: center;
 }
 section:nth-child(1) {
-  background: white;
+  background: #242424;
 }
 section:nth-child(2) {
-  background: #F64747;
+  background: #121212;
 }
 section:nth-child(3) {
-  background: #22A7F0;
+  background: #242424;
 }
 section:nth-child(4) {
-  background: #F9690E;
+  background: #121212;
 }
 section:nth-child(5) {
-  background: #9B59B6;
+  background: #242424;
 }
 section:nth-child(6) {
-  background: #03C9A9;
+  background: #121212;
 }
 section:nth-child(7) {
-  background: #ffcc00;
+  background: #242424;
 }
 
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 1000;
+  border-bottom: 2px solid;
+  border-top: 0;
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(18, 18, 18, 0) 23%, #eee 50%, rgba(18, 18, 18, 0) 77%) 100% 1;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.nav-top a {
+  color: white;
+  padding: 0 2rem;
+  text-decoration: none;
+}
+.nav-top a:hover {
+  color: #5dd4f6;
+}
 .nav__wrapper {
   position: fixed;
   height: 100%;
@@ -53,7 +81,7 @@ section:nth-child(7) {
   transition: all 0.15s ease-out;
 }
 .nav__title {
-  font-size: 32px;
+  font-size: px;
   font-weight: 300;
   margin: 0 0 0.25em;
   width: 300px;
@@ -63,8 +91,7 @@ section:nth-child(7) {
   transition: height 0.3s ease-out, opacity 0.2s ease-out;
 }
 .nav__body {
-  font-weight: 100;
-  font-size: 18px;
+  font-weight: 300;
   font-size: 18px;
   width: 300px;
   height: 0;
@@ -112,14 +139,28 @@ section:nth-child(7) {
 }
 .nav li.active .nav__counter {
   font-size: 48px;
+  color: #5dd4f6;
 }
 .nav li.active .nav__title {
-  height: 40px;
+  height: 36px;
   opacity: 1;
   overflow: visible;
+  color: #5dd4f6;
 }
 .nav li.active .nav__body {
   height: 100px;
   opacity: 1;
   overflow: visible;
 }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  color: #ffffff; /* Text color */
+  padding: 10px; /* Adjust padding as needed */
+  margin-right: 0.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

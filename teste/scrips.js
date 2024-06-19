@@ -33,6 +33,7 @@
             $("#date-slider").slider("value", 1);
             
             sliderbtnCheck =null;
+            sliderCheck = null;
         } 
         
         else {

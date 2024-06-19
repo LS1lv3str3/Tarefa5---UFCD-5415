@@ -9,3 +9,13 @@ $('a[href*=#]:not([href=#])').click(function () {
         0
     );
 });
+
+$("#date-slider").slider({
+    orientation: "horizontal",
+    range:"min",
+    min:0,
+    max: 5,
+    value: 0,
+    
+});
+

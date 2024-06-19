@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução da Internet</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slider-section">
+            <h1>Evolução da Internet</h1>
+            <div class="buttonsSlider">
+                <div class="slider_button"><button id="btn1" onclick="changeSlider(1)"><h4>1969</h4></button></div>
+                <div class="slider_button"><button id="btn2" onclick="changeSlider(2)"><h4>1974</h4></button></div>
+                <div class="slider_button"><button id="btn3" onclick="changeSlider(3)"><h4>1990</h4></button></div>
+                <div class="slider_button"><button id="btn4" onclick="changeSlider(4)"><h4>2000</h4></button></div>
+                <div class="slider_button"><button id="btn5" onclick="changeSlider(5)"><h4>2010</h4></button></div>
+                <div class="slider_button"><button id="btn6" onclick="changeSlider(6)"><h4>2020</h4></button></div>
+            </div>
+            <div id="date-slider"></div>
+            <div id="date-info">
+                <div class="section section1" id="slider_1">
+                    A ARPA (Advanced Research Projects Agency) criada em 1958, entre outros projetos,
+                    iniciou testes para o desenvolvimento de uma rede de computadores em larga escala.
+                    Atingiu esse objetivo em 1969, quando Kleinrock consegue enviar, por packet-switched network (PSN), as letras "LO" para outro computador,
+                    antes do recetor se desconectar (nascendo aqui a ARPANET).
+                  </div>
+                  <div class="section section2" id="slider_2">
+                    Em 1969, 
+                    
+                      Este período destaca o surgimento e popularização da World Wide Web como uma plataforma de navegação baseada em hipertexto. A criação do HTML, HTTP e o navegador Mosaic marcaram o início da web como a conhecemos hoje.
+                  </div>
+                  <div class="section section3" id="slider_3">
+                    Aqui, a internet se torna mais acessível e amigável para o público em geral. Isso inclui a proliferação de provedores de serviços de internet (ISPs), o desenvolvimento de motores de busca, portais e a criação de sites mais interativos.
+                  </div>
+                  <div class="section section4" id="slider_4">
+                    Esta fase destaca a transição para uma internet mais colaborativa e participativa, conhecida como Web 2.0. As redes sociais, como Facebook, Twitter e LinkedIn, ganham destaque, e os usuários começam a criar e compartilhar conteúdo de forma massiva.
+                  </div>
+                  <div class="section section5" id="slider_5">
+                    Aqui, a internet se torna cada vez mais móvel, com a proliferação de smartphones, tablets e outros dispositivos conectados. Isso inclui o desenvolvimento de aplicativos móveis, redes 4G e 5G, e a Internet das Coisas (IoT).
+                  </div>
+                  <div class="section section6" id="slider_6">
+                    Esta fase especula sobre o futuro da internet, com avanços em tecnologias emergentes como inteligência artificial (IA), blockchain, realidade virtual/aumentada (VR/AR), e outras inovações que podem moldar a próxima fase da evolução da internet.
+                  </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024, Grupo de Projeto</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="scrips.js"></script>
+</body>
+</html>

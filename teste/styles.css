@@ -34,6 +34,9 @@ nav ul li a {
     text-align: center;
     margin: 20px;
 }
+.slider-section h1{
+    font-size: 5rem;
+}
 
 #date-slider {
     margin: 20px auto;
@@ -44,8 +47,7 @@ nav ul li a {
 #date-info {
     margin-top: 5%;
     padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    
 }
 
 footer {
@@ -60,6 +62,11 @@ footer {
 
 .section{
     display: none;
+    border: 1px solid #3a5a40;
+    background-color: #dad7cd;
+    border-radius: 10px;
+    text-align: left;
+    padding: 1%;
 }
 
 .buttonsSlider{
@@ -78,7 +85,15 @@ footer {
     height: 75px;
     border-radius: 50%;
     border: none;
+}
+
+.btn-unselected{
     background-color: #a3b18a;
+}
+
+.btn-selected{
+    background-color: #344e41;
+    color: #fff;
 }
 
 
@@ -86,12 +101,24 @@ footer {
     background: #344e41;
 }
 
-/* @media only screen and (max-width: 768px)  {
-    .desktop{
-        display: none !important;
+@media only screen and (max-width: 768px)  {
+
+    .slider_button button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #a3b18a;
     }
 
-    .mobile{
-        display: block !important;
+    .buttonsSlider{
+        display: flex;
+        justify-content: space-around;
+        padding: 0 2.05% 0 2.05%;
+        margin-bottom: -50px;
     }
-} */
+    .slider-section h1{
+        font-size: 2rem;
+    }
+
+}

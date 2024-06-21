@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #3a5a40;
+    background-color: #344e41;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -30,10 +30,20 @@ nav ul li a {
     text-decoration: none;
 }
 
+footer {
+    background-color: #344e41;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    
+}
+
 .slider-section {
     text-align: center;
     margin: 20px;
 }
+
 .slider-section h1{
     font-size: 5rem;
 }
@@ -45,28 +55,43 @@ nav ul li a {
 }
 
 #date-info {
-    margin-top: 5%;
+    margin: 2% auto;
     padding: 20px;
+    width: 85%;
+    min-height: 51vh;
     
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    
 }
 
 .section{
     display: none;
-    border: 1px solid #3a5a40;
+    border: 1px solid #344e41;
     background-color: #dad7cd;
     border-radius: 10px;
     text-align: left;
     padding: 1%;
+}
+
+.texto{
+    width: 60%;
+}
+.texto h3{
+    font-size: 2.5rem;
+}
+
+.texto p, ul{
+    font-size: 1.5rem;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.img img{
+    width: 80%;
 }
 
 .buttonsSlider{
@@ -81,10 +106,12 @@ footer {
 }
 
 .slider_button button{
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
+    width: 130px;
+    height: 70px;
     border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .btn-unselected{
@@ -105,20 +132,51 @@ footer {
 
     .slider_button button{
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    height: 30px;
+    border-radius: 5px;
     border: none;
     background-color: #a3b18a;
+    font-size: 1rem;
+    
     }
 
     .buttonsSlider{
         display: flex;
         justify-content: space-around;
         padding: 0 2.05% 0 2.05%;
-        margin-bottom: -50px;
+        margin-bottom: -42px;
     }
     .slider-section h1{
         font-size: 2rem;
     }
+    
 
+    #date-info{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        margin-top: 10%;
+        min-height: 60.5vh;
+        
+    }
+
+    .texto{
+        width: 100%;
+    }
+    .texto h3{
+        font-size: 1.5rem;
+    }
+    
+    .texto p, ul{
+        font-size: 1rem;
+    }
+    
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    
 }

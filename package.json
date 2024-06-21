@@ -1,7 +1,0 @@
-{
-  "scripts": {
-    "sass": "sass --watch src/style.scss:dist/style.css"},
-  "devDependencies": {
-    "sass": "^1.77.4"
-  }
-}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução da Internet</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+  <header>
+      <nav>
+          <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="sobre.html">Contato</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <section class="slider-section">
+      <h1>Evolução da Internet</h1>
+      <div class="buttonsSlider">
+          <div class="slider_button"><button id="btn1" class="btn-unselected" onclick="changeSlider(1)">1969</button></div>
+          <div class="slider_button"><button id="btn2" class="btn-unselected" onclick="changeSlider(2)">1974</button></div>
+          <div class="slider_button"><button id="btn3" class="btn-unselected" onclick="changeSlider(3)">1990</h4></button></div>
+          <div class="slider_button"><button id="btn4" class="btn-unselected" onclick="changeSlider(4)">2000</button></div>
+          <div class="slider_button"><button id="btn5" class="btn-unselected" onclick="changeSlider(5)">2010</button></div>
+          <div class="slider_button"><button id="btn6" class="btn-unselected" onclick="changeSlider(6)">2020</button></div>
+      </div>
+
+      <div id="date-slider">
+
+      </div>
+
+      <div id="date-info">
+        <div class="section" id="slider_1">
+          <div class="texto">
+            <h3>Anos 1960: As Primeiras Bases</h3>
+            <p>Nos anos 60, a ideia de uma rede de computadores estava a emergir, principalmente no contexto militar e académico.</p>
+            <ul>
+              <li><b>1962:</b> Paul Baran, da <span style="text-decoration: underline;">RAND Corporation</span>, propõe o conceito de uma rede descentralizada para comunicação militar, que poderia resistir a ataques nucleares.</li>
+              <li><b>1965:</b> O MIT realiza a primeira comunicação por computador através de uma linha telefônica, ligando um computador no MIT a outro na Califórnia.</li>
+              <li><b>1969:</b> Surge a ARPANET, a primeira rede de computadores, desenvolvida pela <span style="text-decoration: underline;">Advanced Research Projects Agency</span> (ARPA) do Departamento de Defesa dos EUA. Inicialmente, ligava quatro universidades nos EUA, a ARPANET é muitas vezes considerada o precursor da Internet moderna, estabelecendo o conceito de uma rede de comunicação entre computadores.</li>
+            </ul>
+          </div>
+
+          <div class="img">
+            <img src="./imgs/1960-2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="section" id="slider_2">
+          <div class="texto">
+            <h3>O Protocolo TCP/IP</h3>
+            <p>Com a ARPANET a crescer, surgiu a necessidade de um método mais eficaz para interligar redes diferentes.</p>
+            <ul>
+              <li><b>1974:</b> <a href="https://en.wikipedia.org/wiki/Vint_Cerf" target="_blank">Vint Cerf</a> e <a href="https://en.wikipedia.org/wiki/Bob_Kahn" target="_blank">Bob Kahn</a>
+                publicam um artigo detalhando o <span style="text-decoration: underline;">Transmission Control Protocol</span> (TCP) e o <span style="text-decoration: underline;">Internet Protocol</span>
+                (IP). Este protocolo permitia a interligação de redes distintas, criando uma "rede de redes".</li>
+            </ul>
+            <p>O TCP/IP tornou-se a base para a comunicação de dados na Internet, permitindo a interoperabilidade entre diferentes redes e sistemas.</p>
+          </div>
+
+          <div class="img">
+            <img src="./imgs/1974.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="section" id="slider_3">
+          <div class="texto">
+            <h3>O Surgimento da <span style="text-decoration: underline;">World Wide Web</span></h3>
+            <p>Nos finais dos anos 80 e início dos anos 90, a Internet era usada principalmente por académicos e militares. A necessidade de um sistema mais acessível para o público em geral tornou-se evidente.</p>
+            <ul>
+                <li><b>1990:</b> Tim Berners-Lee, enquanto trabalhava no CERN, desenvolve a <span style="text-decoration: underline;">World Wide Web</span> 
+                  (WWW). Ele criou o primeiro navegador e editor de páginas web, bem como o <span style="text-decoration: underline;">HyperText Transfer Protocol</span> 
+                  (HTTP) e a linguagem de marcação HTML.</li>
+            </ul>
+            <p>A WWW democratizou o acesso à informação, permitindo a criação e visualização de páginas web, o que facilitou a disseminação da Internet para o público em geral.</p>
+          </div>
+          <div class="img">
+            <img src="./imgs/1990.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="section" id="slider_4">
+          <div class="texto">
+            <h3>A Bolha da Internet e a Expansão Global</h3>
+            <p>
+              A década de 1990 viu um crescimento explosivo da Internet, culminando na bolha das empresas ponto-com no final da década.
+            </p>
+            <ul>
+              <li><b>2000:</b> A bolha da Internet estoura, levando à falência de muitas empresas ponto-com que haviam sido sobrevalorizadas.</li>
+              <li><b>Expansão Global:</b> A Internet começa a expandir-se rapidamente para além dos EUA e Europa, com um aumento significativo de utilizadores na Ásia, África e América Latina.</li>
+            </ul>
+            <p>
+              A queda da bolha ponto-com levou a uma consolidação do mercado, mas a infraestrutura de Internet continuou a expandir-se globalmente, tornando-se uma parte essencial da economia mundial.
+            </p>
+          </div>
+          <div class="img">
+            <img src="./imgs/2000.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="section" id="slider_5">
+          <div class="texto">
+            <h3>A Era da Mobilidade e Redes Sociais</h3>
+            <p>
+              Nos anos 2010, a Internet tornou-se omnipresente, com um número crescente de utilizadores a aceder à rede através de dispositivos móveis.
+            </p>
+            <ul>
+              <li><b>Redes Sociais:</b> Plataformas como Facebook, Twitter e Instagram dominam o panorama online, transformando a maneira como as pessoas comunicam e partilham informações.</li>
+              <li><b>Smartphones e Mobilidade:</b> A proliferação de smartphones permite o acesso à Internet em qualquer lugar, impulsionando o crescimento de aplicações móveis e serviços online.</li>
+            </ul>
+            <p>
+              As redes sociais e a mobilidade revolucionaram a forma como as pessoas interagem, consomem conteúdo e realizam negócios online, tornando a Internet uma parte integral da vida quotidiana.
+            </p>
+          </div>
+          <div class="img">
+            <img src="./imgs/2010.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="section" id="slider_6">
+          <div class="texto">
+            <h3>5G, Inteligência Artificial e Conectividade Global</h3>
+            <p>
+              A década de 2020 está marcada por avanços tecnológicos significativos que estão a moldar a próxima era da Internet.
+            </p>
+            <ul>
+              <li><b>5G:</b> A implementação das redes 5G oferece velocidades de Internet significativamente mais rápidas e latência reduzida, permitindo novas aplicações em <i>IoT</i> (Internet das Coisas),
+                automóveis autónomos e realidade aumentada/virtual.</li>
+              <li><b>Inteligência Artificial:</b> A IA está a ser integrada em vários serviços online, desde motores de busca até plataformas de <i>streaming</i>, melhorando a personalização e eficiência.</li>
+              <li><b>Conectividade Global:</b> Projetos como o <a href="https://www.starlink.com">Starlink</a> da <a href="https://www.spacex.com">SpaceX</a> estão a expandir o acesso à Internet para regiões
+                remotas, promovendo a inclusão digital.</li>
+            </ul>
+            <p>
+              A combinação de 5G, IA e conectividade global está a transformar a Internet numa plataforma ainda mais poderosa e acessível, com o potencial de impactar significativamente todos os aspectos da
+              sociedade e da economia.
+            </p>
+          </div>
+          
+          <div class="img">
+            <img src="./imgs/2020.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024, Grupo de Projeto</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="scrips.js"></script>
+</body>
+</html>

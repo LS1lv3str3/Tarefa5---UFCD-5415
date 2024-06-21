@@ -28,10 +28,9 @@
                 btn.classList.add('btn-unselected');
                 
             }
-            
-            
+
             $("#date-slider").slider("value", 1);
-            
+           
             sliderbtnCheck =null;
             sliderCheck = null;
         } 
@@ -39,9 +38,17 @@
         else {
             if (sliderCheck) {
                 sliderCheck.hide();
-                
             }
-            sliderInfo.show();
+            
+            if (screen.width <= 768) {
+                sliderInfo.css('display', 'flex');
+                sliderInfo.css('flex-direction', 'column');
+            }
+            else{
+                sliderInfo.css('display','inline-flex');
+
+            }
+           
             sliderCheck = sliderInfo;
 
             for (let i = 1; i <= opc; i++) {
@@ -57,9 +64,6 @@
                 btn.classList.add('btn-unselected');
                 
             }
-            sliderbtnCheck =opc;
+            
         }
-        
-     
-        // handleClick();
     }
